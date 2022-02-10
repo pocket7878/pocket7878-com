@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           <h2>Pocket7878</h2>
           <Image
             src='/prof_img.png'
-            alt='GitHub Logo'
+            alt='Profile image'
             width={128}
             height={128}
           />
@@ -56,6 +56,14 @@ const Home: NextPage = () => {
             <Image
               src='/facebook_logo.png'
               alt='Facebook Logo'
+              width={32}
+              height={32}
+            />
+          </SocicalLinkIcon>
+          <SocicalLinkIcon href='https://qiita.com/pocket7878'>
+            <Image
+              src='/qiita_icon.png'
+              alt='Qiita Icon'
               width={32}
               height={32}
             />
