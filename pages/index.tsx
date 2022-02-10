@@ -14,16 +14,18 @@ const Home: NextPage = () => {
       </Head>
 
       <Main>
-        <h1>Pocket7878 Portfolio</h1>
-        <Image src='/prof_img.png' alt='GitHub Logo' width={128} height={128} />
+        <h1>About me</h1>
         <article>
-          <h2>About me</h2>
+          <h2>Pocket7878</h2>
+          <Image src='/prof_img.png' alt='GitHub Logo' width={128} height={128} />
+          <section>
           <HightLightedLink href='https://azit.co.jp/'>
             Azit Inc.
           </HightLightedLink>
           でCTOをしています。
           <br />
           趣味で草花の写真を撮るために遠くに散歩にいったりします。
+          </section>
         </article>
         <article>
           <h2>Links</h2>
