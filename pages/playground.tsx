@@ -34,6 +34,21 @@ const Playground: NextPage = () => {
             </LinksWrapper>
           </section>
           <section>
+            <h2>Server Side</h2>
+            <LinksWrapper>
+              <GitHubLinkPlaygroundCard
+                title='groute'
+                description='Google DistanceMatrix, Directions等のAPIのラッパー'
+                url='https://github.com/azitinc/groute'
+              />
+              <GitHubLinkPlaygroundCard
+                title='aws-lambda-vim-layer'
+                description='VimScriptでAWS Lambdaを記述するためのレイヤー'
+                url='https://github.com/pocket7878/aws-lambda-vim-layer'
+              />
+            </LinksWrapper>
+          </section>
+          <section>
             <h2>Other</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
@@ -55,11 +70,6 @@ const Playground: NextPage = () => {
                 title='compiling-functional-language-go'
                 description='Golangで純粋関数型言語のVM(G-Machine)'
                 url='https://github.com/pocket7878/compiling-functional-language-using-go'
-              />
-              <GitHubLinkPlaygroundCard
-                title='aws-lambda-vim-layer'
-                description='VimScriptでAWS Lambdaを記述するためのレイヤー'
-                url='https://github.com/pocket7878/aws-lambda-vim-layer'
               />
               <GitHubLinkPlaygroundCard
                 title='afz'
