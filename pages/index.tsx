@@ -18,16 +18,21 @@ const Home: NextPage = () => {
           Pocket7878 Portfolio
         </h1>
         <article>
+          <h2>About me</h2>
+          <HightLightLink href="https://azit.co.jp/">Azit Inc.</HightLightLink>でCTOをしています。<br/>
+          趣味で草花の写真を撮るために遠くに散歩にいったりします。
+        </article>
+        <article>
           <h2>Blogs</h2>
           <BlogLinkWrapper>
-            <BlogLinkCard>
+            <BlogLinkCard href="https://poketo7878-dev.hatenablog.com/">
               <h2>Let&lsquo;s write β</h2>
               <p>
                 エンジニアリング・チームづくり関連のブログ
               </p>
             </BlogLinkCard>
 
-            <BlogLinkCard>
+            <BlogLinkCard href="https://no-logic.hatenablog.jp/">
               <h2>NO LOGIC</h2>
               <p>
                 写真ブログ
@@ -59,12 +64,23 @@ const Main = styled.main`
   min-height: 100vh;
 `
 
+const HightLightLink = styled.a`
+  color: #0070f3;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+`
+
 const BlogLinkWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
 `;
 
-const BlogLinkCard = styled.div`
+const BlogLinkCard = styled.a`
   margin-right: 1rem;
   padding: 1.5rem;
   text-align: left;
