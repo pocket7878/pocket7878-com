@@ -19,8 +19,20 @@ const Home: NextPage = () => {
         </h1>
         <article>
           <h2>About me</h2>
-          <HightLightLink href="https://azit.co.jp/">Azit Inc.</HightLightLink>でCTOをしています。<br/>
+          <HightLightedLink href="https://azit.co.jp/">Azit Inc.</HightLightedLink>でCTOをしています。<br/>
           趣味で草花の写真を撮るために遠くに散歩にいったりします。
+        </article>
+        <article>
+          <h2>Links</h2>
+          <SocicalLinkIcon href="https://github.com/pocket7878">
+            <Image src="/github_logo.png" alt="GitHub Logo" width={32} height={32} />
+          </SocicalLinkIcon>
+          <SocicalLinkIcon href="https://twitter.com/Pocket7878">
+            <Image src="/twitter_logo.svg" alt="Twitter Logo" width={32} height={32} />
+          </SocicalLinkIcon>
+          <SocicalLinkIcon href="https://www.facebook.com/Pocket7878">
+            <Image src="/facebook_logo.png" alt="Facebook Logo" width={32} height={32} />
+          </SocicalLinkIcon>
         </article>
         <article>
           <h2>Blogs</h2>
@@ -64,7 +76,7 @@ const Main = styled.main`
   min-height: 100vh;
 `
 
-const HightLightLink = styled.a`
+const HightLightedLink = styled.a`
   color: #0070f3;
 
   &:hover,
@@ -110,5 +122,8 @@ const BlogLinkCard = styled.a`
     line-height: 1.5;
   }
 }
-
 `
+
+const SocicalLinkIcon = styled.a`
+  margin-right: 1rem;
+`;
