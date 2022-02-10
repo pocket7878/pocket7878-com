@@ -95,6 +95,7 @@ const BlogLinkWrapper = styled.div`
 
 const BlogLinkCard = styled.a`
   margin-right: 1rem;
+  margin-bottom: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
