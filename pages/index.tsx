@@ -1,3 +1,5 @@
+import { faSpeakerDeck } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -67,6 +69,9 @@ const Home: NextPage = () => {
               width={32}
               height={32}
             />
+          </SocicalLinkIcon>
+          <SocicalLinkIcon href='https://speakerdeck.com/pocket7878'>
+            <FontAwesomeIcon icon={faSpeakerDeck} width={32} height={32} />
           </SocicalLinkIcon>
         </article>
         <article>
