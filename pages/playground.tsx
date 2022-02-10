@@ -1,8 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
+import { GitHubLinkPlaygroundCard } from '../components/GitHubLinkPlaygroundCard';
+import { LinksWrapper } from '../components/LinksWrapper';
+import styles from '../styles/Home.module.css';
 
 const Playground: NextPage = () => {
   return (
@@ -16,12 +18,81 @@ const Playground: NextPage = () => {
       <Main>
         <h1>Playground</h1>
         <article>
-          <LinksWrapper>
-            <LinkCard>
-              <h2>TBD</h2>
-              <p>TBD...</p>
-            </LinkCard>
-          </LinksWrapper>
+          <section>
+            <h2>Mobile</h2>
+            <LinksWrapper>
+              <GitHubLinkPlaygroundCard
+                title='reduxy'
+                description='Android向けのRedux風アーキテクチャ'
+                url='https://github.com/pocket7878/reduxy'
+              />
+              <GitHubLinkPlaygroundCard
+                title='switcherView'
+                description='Android向けのトグルスイッチ風UIコンポーネント'
+                url='https://github.com/pocket7878/switcherView'
+              />
+            </LinksWrapper>
+          </section>
+          <section>
+            <h2>Other</h2>
+            <LinksWrapper>
+              <GitHubLinkPlaygroundCard
+                title='bevy_sample_stg'
+                description='Rustのゲームエンジンbevyの学習のために作成しているシューティングゲーム'
+                url='https://github.com/pocket7878/bevy_sample_stg'
+              />
+              <GitHubLinkPlaygroundCard
+                title='alns-rs'
+                description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
+                url='https://github.com/pocket7878/alns-rs'
+              />
+              <GitHubLinkPlaygroundCard
+                title='minicpu'
+                description='FPGA DE0-CV上にMIPS互換のCPUする学習'
+                url='https://github.com/pocket7878/minicpu'
+              />
+              <GitHubLinkPlaygroundCard
+                title='compiling-functional-language-go'
+                description='Golangで純粋関数型言語のVM(G-Machine)'
+                url='https://github.com/pocket7878/compiling-functional-language-using-go'
+              />
+              <GitHubLinkPlaygroundCard
+                title='aws-lambda-vim-layer'
+                description='VimScriptでAWS Lambdaを記述するためのレイヤー'
+                url='https://github.com/pocket7878/aws-lambda-vim-layer'
+              />
+              <GitHubLinkPlaygroundCard
+                title='afz'
+                description='Plan9のエディタ acmeのためのFuzzy finder'
+                url='https://github.com/pocket7878/afz'
+              />
+              <GitHubLinkPlaygroundCard
+                title='ec'
+                description='Plan9のエディタacmeとsamから影響を受けたmacOS向けテキストエディタ'
+                url='https://github.com/pocket7878/ec'
+              />
+              <GitHubLinkPlaygroundCard
+                title='kebab'
+                description='Common Lispで文字列をPascalCase, camelCase, snake_case, kebab-case変換するライブラリ'
+                url='https://github.com/pocket7878/kebab'
+              />
+              <GitHubLinkPlaygroundCard
+                title='my-sat'
+                description='HaskellでSATソルバーを実装してみる学習'
+                url='https://github.com/pocket7878/my-sat'
+              />
+              <GitHubLinkPlaygroundCard
+                title='generalized-lr'
+                description='Haskellで一般化LR法の実装'
+                url='https://github.com/pocket7878/generalized-lr'
+              />
+              <GitHubLinkPlaygroundCard
+                title='mini-reg'
+                description='Haskellで正規表現エンジンの実装'
+                url='https://github.com/pocket7878/mini-reg'
+              />
+            </LinksWrapper>
+          </section>
         </article>
       </Main>
 
@@ -44,42 +115,4 @@ export default Playground;
 
 const Main = styled.main`
   min-height: 100vh;
-`;
-
-const LinksWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-`;
-
-const LinkCard = styled.a`
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  flex-basis: 300px;
-  min-height: 152px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #0070f3;
-    border-color: #0070f3;
-  }
-
-  & h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-  }
-
-  & p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-}
 `;

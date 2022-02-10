@@ -16,5 +16,5 @@ export const Layout = memo(function Layout({ children }: Props) {
 });
 
 const Wrapper = styled.div`
-	padding-top: 48px;
+  padding-top: 48px;
 `;

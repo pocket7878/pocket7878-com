@@ -1,8 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
+import { LinkCard } from '../components/LinkCard';
+import { LinksWrapper } from '../components/LinksWrapper';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -17,14 +19,19 @@ const Home: NextPage = () => {
         <h1>About me</h1>
         <article>
           <h2>Pocket7878</h2>
-          <Image src='/prof_img.png' alt='GitHub Logo' width={128} height={128} />
+          <Image
+            src='/prof_img.png'
+            alt='GitHub Logo'
+            width={128}
+            height={128}
+          />
           <section>
-          <HightLightedLink href='https://azit.co.jp/'>
-            Azit Inc.
-          </HightLightedLink>
-          でCTOをしています。
-          <br />
-          趣味で草花の写真を撮るために遠くに散歩にいったりします。
+            <HightLightedLink href='https://azit.co.jp/'>
+              Azit Inc.
+            </HightLightedLink>{' '}
+            共同創業者・CTO
+            <br />
+            趣味で草花の写真を撮るために遠くに散歩にいったりします。
           </section>
         </article>
         <article>
@@ -56,17 +63,17 @@ const Home: NextPage = () => {
         </article>
         <article>
           <h2>Blogs</h2>
-          <BlogLinkWrapper>
-            <BlogLinkCard href='https://poketo7878-dev.hatenablog.com/'>
+          <LinksWrapper>
+            <LinkCard href='https://poketo7878-dev.hatenablog.com/'>
               <h2>Let&lsquo;s write β</h2>
               <p>エンジニアリング・チームづくり関連のブログ</p>
-            </BlogLinkCard>
+            </LinkCard>
 
-            <BlogLinkCard href='https://no-logic.hatenablog.jp/'>
+            <LinkCard href='https://no-logic.hatenablog.jp/'>
               <h2>NO LOGIC</h2>
               <p>写真ブログ</p>
-            </BlogLinkCard>
-          </BlogLinkWrapper>
+            </LinkCard>
+          </LinksWrapper>
         </article>
       </Main>
 
@@ -100,44 +107,6 @@ const HightLightedLink = styled.a`
     color: #0070f3;
     border-color: #0070f3;
   }
-`;
-
-const BlogLinkWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-`;
-
-const BlogLinkCard = styled.a`
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  flex-basis: 300px;
-  min-height: 152px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #0070f3;
-    border-color: #0070f3;
-  }
-
-  & h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-  }
-
-  & p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-}
 `;
 
 const SocicalLinkIcon = styled.a`
