@@ -17,6 +17,7 @@ const Playground: NextPage = () => {
 
       <Main>
         <h1>Playground</h1>
+        今まで作ってきた趣味プロジェクト・ライブラリ等のまとめ
         <article>
           <section>
             <h2>Mobile</h2>
