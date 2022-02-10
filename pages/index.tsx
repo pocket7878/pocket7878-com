@@ -17,6 +17,7 @@ const Home: NextPage = () => {
         <h1>
           Pocket7878 Portfolio
         </h1>
+        <Image src="/prof_img.png" alt="GitHub Logo" width={128} height={128} />
         <article>
           <h2>About me</h2>
           <HightLightedLink href="https://azit.co.jp/">Azit Inc.</HightLightedLink>でCTOをしています。<br/>
