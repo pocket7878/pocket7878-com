@@ -2,19 +2,19 @@ import React, { memo } from 'react';
 import { LinkCard } from './LinkCard';
 
 type Props = {
-  title: string;
+  repoName: string;
+  owner?: string;
   description?: string;
-  url?: string;
 };
 
 export const GitHubLinkPlaygroundCard = memo(function GitHubLinkPlaygroundCard({
-  title,
+  repoName,
   description = '',
-  url,
+  owner = 'pocket7878',
 }: Props) {
   return (
-    <LinkCard href={url}>
-      <h2>{title}</h2>
+    <LinkCard href={`https://github.com/${owner}/${repoName}`}>
+      <h2>{repoName}</h2>
       <p>{description}</p>
     </LinkCard>
   );

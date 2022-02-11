@@ -23,14 +23,16 @@ const Playground: NextPage = () => {
             <h2>Mobile</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
-                title='reduxy'
+                repoName='reduxy'
                 description='Android向けのRedux風アーキテクチャ'
-                url='https://github.com/pocket7878/reduxy'
               />
               <GitHubLinkPlaygroundCard
-                title='switcherView'
+                repoName='switcherView'
                 description='Android向けのトグルスイッチ風UIコンポーネント'
-                url='https://github.com/pocket7878/switcherView'
+              />
+              <GitHubLinkPlaygroundCard
+                repoName='swift-ui-redux-like'
+                description=''
               />
             </LinksWrapper>
           </section>
@@ -38,14 +40,13 @@ const Playground: NextPage = () => {
             <h2>Server Side</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
-                title='groute'
+                repoName='groute'
                 description='Google DistanceMatrix, Directions等のAPIのラッパー'
-                url='https://github.com/azitinc/groute'
+                owner='azitinc'
               />
               <GitHubLinkPlaygroundCard
-                title='aws-lambda-vim-layer'
+                repoName='aws-lambda-vim-layer'
                 description='VimScriptでAWS Lambdaを記述するためのレイヤー'
-                url='https://github.com/pocket7878/aws-lambda-vim-layer'
               />
             </LinksWrapper>
           </section>
@@ -53,54 +54,44 @@ const Playground: NextPage = () => {
             <h2>Other</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
-                title='bevy_sample_stg'
+                repoName='bevy_sample_stg'
                 description='Rustのゲームエンジンbevyの学習のために作成しているシューティングゲーム'
-                url='https://github.com/pocket7878/bevy_sample_stg'
               />
               <GitHubLinkPlaygroundCard
-                title='alns-rs'
+                repoName='alns-rs'
                 description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
-                url='https://github.com/pocket7878/alns-rs'
               />
               <GitHubLinkPlaygroundCard
-                title='minicpu'
+                repoName='minicpu'
                 description='FPGA DE0-CV上にMIPS互換のCPUする学習'
-                url='https://github.com/pocket7878/minicpu'
               />
               <GitHubLinkPlaygroundCard
-                title='compiling-functional-language-go'
+                repoName='compiling-functional-language-go'
                 description='Golangで純粋関数型言語のVM(G-Machine)'
-                url='https://github.com/pocket7878/compiling-functional-language-using-go'
               />
               <GitHubLinkPlaygroundCard
-                title='afz'
+                repoName='afz'
                 description='Plan9のエディタ acmeのためのFuzzy finder'
-                url='https://github.com/pocket7878/afz'
               />
               <GitHubLinkPlaygroundCard
-                title='ec'
+                repoName='ec'
                 description='Plan9のエディタacmeとsamから影響を受けたmacOS向けテキストエディタ'
-                url='https://github.com/pocket7878/ec'
               />
               <GitHubLinkPlaygroundCard
-                title='kebab'
+                repoName='kebab'
                 description='Common Lispで文字列をPascalCase, camelCase, snake_case, kebab-case変換するライブラリ'
-                url='https://github.com/pocket7878/kebab'
               />
               <GitHubLinkPlaygroundCard
-                title='my-sat'
+                repoName='my-sat'
                 description='HaskellでSATソルバーを実装してみる学習'
-                url='https://github.com/pocket7878/my-sat'
               />
               <GitHubLinkPlaygroundCard
-                title='generalized-lr'
+                repoName='generalized-lr'
                 description='Haskellで一般化LR法の実装'
-                url='https://github.com/pocket7878/generalized-lr'
               />
               <GitHubLinkPlaygroundCard
-                title='mini-reg'
+                repoName='mini-reg'
                 description='Haskellで正規表現エンジンの実装'
-                url='https://github.com/pocket7878/mini-reg'
               />
             </LinksWrapper>
           </section>
