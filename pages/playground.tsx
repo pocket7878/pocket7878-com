@@ -32,7 +32,16 @@ const Playground: NextPage = () => {
               />
               <GitHubLinkPlaygroundCard
                 repoName='swift-ui-redux-like'
-                description=''
+                description='Redux風のデータ管理でSwiftUIを使うサンプル'
+              />
+            </LinksWrapper>
+          </section>
+          <section>
+            <h2>Web Front</h2>
+            <LinksWrapper>
+              <GitHubLinkPlaygroundCard
+                repoName='spa-login-learning-frontend'
+                description='Next.jsのSPAから、Auth0の認証をしてバックエンドと通信するサンプル'
               />
             </LinksWrapper>
           </section>
@@ -47,6 +56,10 @@ const Playground: NextPage = () => {
               <GitHubLinkPlaygroundCard
                 repoName='aws-lambda-vim-layer'
                 description='VimScriptでAWS Lambdaを記述するためのレイヤー'
+              />
+              <GitHubLinkPlaygroundCard
+                repoName='spa-login-learning-backend'
+                description='SPAでNext.jsのフロントエンドとAuth0で認証をして通信するサーバーサンプル'
               />
             </LinksWrapper>
           </section>
