@@ -64,12 +64,25 @@ const Playground: NextPage = () => {
             </LinksWrapper>
           </section>
           <section>
-            <h2>Other</h2>
+            <h2>Game</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
                 repoName='bevy_sample_stg'
                 description='Rustのゲームエンジンbevyの学習のために作成しているシューティングゲーム'
               />
+              <GitHubLinkPlaygroundCard
+                repoName='bevy_bulletml'
+                description='RustのゲームエンジンbevyでBulletMLを使うためのライブラリ'
+              />
+              <GitHubLinkPlaygroundCard
+                repoName='bevy_bulletml_viewer'
+                description='RustのゲームエンジンbevyでBulletMLを表示するサンプル'
+              />
+            </LinksWrapper>
+          </section>
+          <section>
+            <h2>Other</h2>
+            <LinksWrapper>
               <GitHubLinkPlaygroundCard
                 repoName='alns-rs'
                 description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
@@ -130,4 +143,5 @@ export default Playground;
 
 const Main = styled.main`
   min-height: 100vh;
+  margin-bottom: 24px;
 `;
