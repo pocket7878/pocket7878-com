@@ -84,6 +84,10 @@ const Playground: NextPage = () => {
             <h2>Other</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
+                repoName='itermcolors2alacritty'
+                description='iTermのカラーテーマをalacrittyの色設定に変換するCLI'
+              />
+              <GitHubLinkPlaygroundCard
                 repoName='alns-rs'
                 description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
               />
