@@ -10,6 +10,10 @@ export const Header = memo(function Header() {
     setMenuOpened(!menuOpend);
   }, [menuOpend]);
 
+  const handleMenuLinkClicked = useCallback(() => {
+    setMenuOpened(false);
+  }, []);
+
   return (
     <Wrapper>
       <Title>
@@ -19,10 +23,10 @@ export const Header = memo(function Header() {
         <FontAwesomeIcon icon={faBars} height={16} />
       </MenuToggler>
       <Nav menuOpened={menuOpend}>
-        <MenuItem>
+        <MenuItem onClick={handleMenuLinkClicked}>
           <Link href='/'>About me</Link>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={handleMenuLinkClicked}>
           <Link href='/playground'>Playground</Link>
         </MenuItem>
       </Nav>
