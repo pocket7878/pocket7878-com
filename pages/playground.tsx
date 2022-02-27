@@ -81,15 +81,11 @@ const Playground: NextPage = () => {
             </LinksWrapper>
           </section>
           <section>
-            <h2>Other</h2>
+            <h2>Low-Level</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
-                repoName='itermcolors2alacritty'
-                description='iTermのカラーテーマをalacrittyの色設定に変換するCLI'
-              />
-              <GitHubLinkPlaygroundCard
-                repoName='alns-rs'
-                description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
+                repoName='9cc-rs'
+                description='『低レイヤを知りたい人のためのCコンパイラ作成入門』をM1 Mac上でRustで追ってみる'
               />
               <GitHubLinkPlaygroundCard
                 repoName='minicpu'
@@ -99,17 +95,14 @@ const Playground: NextPage = () => {
                 repoName='compiling-functional-language-go'
                 description='Golangで純粋関数型言語のVM(G-Machine)'
               />
+            </LinksWrapper>
+          </section>
+          <section>
+            <h2>Algorithm</h2>
+            <LinksWrapper>
               <GitHubLinkPlaygroundCard
-                repoName='afz'
-                description='Plan9のエディタ acmeのためのFuzzy finder'
-              />
-              <GitHubLinkPlaygroundCard
-                repoName='ec'
-                description='Plan9のエディタacmeとsamから影響を受けたmacOS向けテキストエディタ'
-              />
-              <GitHubLinkPlaygroundCard
-                repoName='kebab'
-                description='Common Lispで文字列をPascalCase, camelCase, snake_case, kebab-case変換するライブラリ'
+                repoName='alns-rs'
+                description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
               />
               <GitHubLinkPlaygroundCard
                 repoName='my-sat'
@@ -122,6 +115,27 @@ const Playground: NextPage = () => {
               <GitHubLinkPlaygroundCard
                 repoName='mini-reg'
                 description='Haskellで正規表現エンジンの実装'
+              />
+            </LinksWrapper>
+          </section>
+          <section>
+            <h2>Other</h2>
+            <LinksWrapper>
+              <GitHubLinkPlaygroundCard
+                repoName='itermcolors2alacritty'
+                description='iTermのカラーテーマをalacrittyの色設定に変換するCLI'
+              />
+              <GitHubLinkPlaygroundCard
+                repoName='afz'
+                description='Plan9のエディタ acmeのためのFuzzy finder'
+              />
+              <GitHubLinkPlaygroundCard
+                repoName='ec'
+                description='Plan9のエディタacmeとsamから影響を受けたmacOS向けテキストエディタ'
+              />
+              <GitHubLinkPlaygroundCard
+                repoName='kebab'
+                description='Common Lispで文字列をPascalCase, camelCase, snake_case, kebab-case変換するライブラリ'
               />
             </LinksWrapper>
           </section>
