@@ -61,6 +61,10 @@ const Playground: NextPage = () => {
                 repoName='spa-login-learning-backend'
                 description='SPAでNext.jsのフロントエンドとAuth0で認証をして通信するサーバーサンプル'
               />
+              <GitHubLinkPlaygroundCard
+                repoName='go-ddd-learning'
+                description='Go ClearnArchitecure + DDD example.'
+              />
             </LinksWrapper>
           </section>
           <section>
