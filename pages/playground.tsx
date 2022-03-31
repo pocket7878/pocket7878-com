@@ -126,6 +126,10 @@ const Playground: NextPage = () => {
             <h2>Other</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
+                repoName='tdd-book-go'
+                description='『テスト駆動開発』をGo言語で追ってみる '
+              />
+              <GitHubLinkPlaygroundCard
                 repoName='itermcolors2alacritty'
                 description='iTermのカラーテーマをalacrittyの色設定に変換するCLI'
               />
