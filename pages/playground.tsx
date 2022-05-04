@@ -88,6 +88,10 @@ const Playground: NextPage = () => {
             <h2>Low-Level</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
+                repoName='nes-rs'
+                description='Rustでファミコンエミュレータをつくってみる'
+              />
+              <GitHubLinkPlaygroundCard
                 repoName='compiler-book-rs'
                 description='『低レイヤを知りたい人のためのCコンパイラ作成入門』をM1 Mac上でRustで追ってみる'
               />
