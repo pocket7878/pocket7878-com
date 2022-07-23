@@ -73,6 +73,14 @@ const Home: NextPage = () => {
           <SocicalLinkIcon href='https://speakerdeck.com/pocket7878'>
             <FontAwesomeIcon icon={faSpeakerDeck} width={32} height={32} />
           </SocicalLinkIcon>
+          <SocicalLinkIcon href='https://note.com/pocket7878'>
+            <Image
+              src='/note_logo.svg'
+              alt='Note Logo'
+              width={32}
+              height={32}
+            />
+          </SocicalLinkIcon>
         </article>
         <article>
           <h2>Blogs</h2>
