@@ -109,6 +109,10 @@ const Playground: NextPage = () => {
             <h2>Algorithm</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
+                repoName='vec-reg'
+                description='RustでVectorにたいして関数をつかって正規表現のようにマッチ判定ができるライブラリ'
+              />
+              <GitHubLinkPlaygroundCard
                 repoName='alns-rs'
                 description='配車最適化問題のヒューリスティックアルゴリズムALNSのRust実装'
               />
