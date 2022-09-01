@@ -70,6 +70,9 @@ const Home: NextPage = () => {
               height={32}
             />
           </SocicalLinkIcon>
+          <SocicalLinkIcon href='https://zenn.dev/pocket7878'>
+            <Image src='/zenn.svg' alt='Zenn Logo' width={32} height={32} />
+          </SocicalLinkIcon>
           <SocicalLinkIcon href='https://speakerdeck.com/pocket7878'>
             <FontAwesomeIcon icon={faSpeakerDeck} width={32} height={32} />
           </SocicalLinkIcon>
