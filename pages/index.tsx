@@ -62,6 +62,14 @@ const Home: NextPage = () => {
               height={32}
             />
           </SocicalLinkIcon>
+          <SocicalLinkIcon href='https://www.instagram.com/pocket7878'>
+            <Image
+                src='/instagram_logo.png'
+                alt='Instagram Logo'
+                width={32}
+                height={32}
+            />
+          </SocicalLinkIcon>
           <SocicalLinkIcon href='https://qiita.com/pocket7878'>
             <Image
               src='/qiita_icon.png'
