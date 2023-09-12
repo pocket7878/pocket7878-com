@@ -49,6 +49,10 @@ const Playground: NextPage = () => {
             <h2>Server Side</h2>
             <LinksWrapper>
               <GitHubLinkPlaygroundCard
+                repoName='rust-onion-example'
+                description='Rust layered architecture example'
+              />
+              <GitHubLinkPlaygroundCard
                 repoName='groute'
                 description='Google DistanceMatrix, Directions等のAPIのラッパー'
                 owner='azitinc'
