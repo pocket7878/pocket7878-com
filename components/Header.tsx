@@ -1,7 +1,7 @@
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import React, { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 export const Header = memo(function Header() {
@@ -25,6 +25,9 @@ export const Header = memo(function Header() {
       <Nav menuOpened={menuOpend}>
         <MenuItem onClick={handleMenuLinkClicked}>
           <Link href='/'>About me</Link>
+        </MenuItem>
+        <MenuItem onClick={handleMenuLinkClicked}>
+          <Link href='/curriculum_vitae'>Curriculum Vitae</Link>
         </MenuItem>
         <MenuItem onClick={handleMenuLinkClicked}>
           <Link href='/playground'>Playground</Link>
