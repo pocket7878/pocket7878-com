@@ -22,10 +22,10 @@ const Home: NextPage = () => {
         <article>
           <h2>Pocket7878</h2>
           <Image
-            src='/prof_img.png'
+            src='/prof_img.jpg'
             alt='Profile image'
-            width={128}
-            height={128}
+            width={300}
+            height={245}
           />
           <section>
             <HightLightedLink href='https://azit.co.jp/'>
@@ -64,10 +64,10 @@ const Home: NextPage = () => {
           </SocicalLinkIcon>
           <SocicalLinkIcon href='https://www.instagram.com/pocket7878'>
             <Image
-                src='/instagram_logo.png'
-                alt='Instagram Logo'
-                width={32}
-                height={32}
+              src='/instagram_logo.png'
+              alt='Instagram Logo'
+              width={32}
+              height={32}
             />
           </SocicalLinkIcon>
           <SocicalLinkIcon href='https://qiita.com/pocket7878'>

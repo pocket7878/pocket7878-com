@@ -17,10 +17,10 @@ const Home: NextPage = () => {
         <h1>職務経歴書</h1>
         <article>
           <Image
-            src='/prof_img.png'
+            src='/prof_img.jpg'
             alt='Profile image'
-            width={128}
-            height={128}
+            width={300}
+            height={245}
           />
           <section>
             <h2>自己紹介</h2>
