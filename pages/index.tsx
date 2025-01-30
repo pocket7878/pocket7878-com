@@ -107,6 +107,56 @@ const Home: NextPage = () => {
             </LinkCard>
           </LinksWrapper>
         </article>
+        <article>
+          <h2>Other</h2>
+          Azit inc.のコーポレートブログに投稿した内容です。
+          <ul>
+            <li>
+              <a
+                href='https://love-from.azit.co.jp/article/ddd'
+                target='_blank'
+                rel='noopener noreferrer'>
+                2022-06-16:
+                複雑な事業ドメインをプロダクトで扱うためのチームでの取り組み
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://love-from.azit.co.jp/article/requiredspecifications'
+                target='_blank'
+                rel='noopener noreferrer'>
+                2022-07-22:
+                フルリモートチームで開発を円滑に進めるための要求仕様書の進化の変遷
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://love-from.azit.co.jp/article/technologystack'
+                target='_blank'
+                rel='noopener noreferrer'>
+                2022-09-05: CREW Expressを支える技術スタック
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://love-from.azit.co.jp/article/deliveryx-web-front-feature-arch'
+                target='_blank'
+                rel='noopener noreferrer'>
+                2024-12-05:
+                DeliveryXのWebフロントエンドでのFeatureアーキテクチャ導入の背景と実践
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://love-from.azit.co.jp/article/backend-rbs-modular-monolith'
+                target='_blank'
+                rel='noopener noreferrer'>
+                2025-01-24:
+                RBSの導入をすすめて、モジュラモノリスバックエンドの保守性を高める
+              </a>
+            </li>
+          </ul>
+        </article>
       </Main>
 
       <footer className={styles.footer}>
