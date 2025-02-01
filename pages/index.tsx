@@ -2,7 +2,7 @@ import { faSpeakerDeck } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import styled from 'styled-components';
 import { LinkCard } from '../components/LinkCard';
 import { LinksWrapper } from '../components/LinksWrapper';
