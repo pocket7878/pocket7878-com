@@ -22,7 +22,7 @@ export const Header = memo(function Header() {
       <MenuToggler onClick={handleMenuTogglerClicked}>
         <FontAwesomeIcon icon={faBars} height={16} />
       </MenuToggler>
-      <Nav menuOpened={menuOpend}>
+      <Nav $menuOpened={menuOpend}>
         <MenuItem onClick={handleMenuLinkClicked}>
           <Link href='/'>About me</Link>
         </MenuItem>
@@ -70,7 +70,7 @@ const MenuToggler = styled.div`
   }
 `;
 
-const Nav = styled.nav<{ menuOpened: boolean }>`
+const Nav = styled.nav<{ $menuOpened: boolean }>`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -82,7 +82,7 @@ const Nav = styled.nav<{ menuOpened: boolean }>`
     height: unset;
     width: 100%;
     position: relative;
-    display: ${({ menuOpened }) => (menuOpened ? 'flex' : 'none')};
+    display: ${({ $menuOpened }) => ($menuOpened ? 'flex' : 'none')};
   }
 `;
 
