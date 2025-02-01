@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styled from 'styled-components';
 import { GitHubLinkPlaygroundCard } from '../components/GitHubLinkPlaygroundCard';
 import { LinksWrapper } from '../components/LinksWrapper';
@@ -8,13 +8,12 @@ import styles from '../styles/Home.module.css';
 
 const Playground: NextPage = () => {
   return (
-    <div className={styles.container}>
+    (<div className={styles.container}>
       <Head>
         <title>Pocket7878.com/Playground</title>
         <meta name='description' content='pocket7878 portfolio' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <Main>
         <h1>Playground</h1>
         今まで作ってきた趣味プロジェクト・ライブラリ等のまとめ
@@ -161,7 +160,6 @@ const Playground: NextPage = () => {
           </section>
         </article>
       </Main>
-
       <footer className={styles.footer}>
         <a
           href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
@@ -169,11 +167,19 @@ const Playground: NextPage = () => {
           rel='noopener noreferrer'>
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
+            <Image
+              src='/vercel.svg'
+              alt='Vercel Logo'
+              width={72}
+              height={16}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </span>
         </a>
       </footer>
-    </div>
+    </div>)
   );
 };
 
