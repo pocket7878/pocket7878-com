@@ -1,33 +1,17 @@
-import styled from 'styled-components';
+import { AnchorHTMLAttributes } from 'react';
 
-export const LinkCard = styled.a`
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  flex-basis: 300px;
-  min-height: 152px;
+type Props = {
+  title: string;
+  description: string;
+} & AnchorHTMLAttributes<HTMLAnchorElement>;
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: #0070f3;
-    border-color: #0070f3;
-  }
-
-  & h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-  }
-
-  & p {
-    margin: 0;
-    font-size: 14px;
-		color: rgba(0, 0, 0, 0.7070707070707070);
-    line-height: 1.5;
-  }
-}
-`;
+export const LinkCard = ({ title, description, ...anchorProps }: Props) => {
+  return (
+    <a
+      {...anchorProps}
+      className='min-h-38 w-80 rounded-lg border border-gray-200 p-6 text-left no-underline transition-colors duration-300 hover:border-blue-500 hover:text-blue-500 focus:border-blue-500 focus:text-blue-500 active:border-blue-500 active:text-blue-500'>
+      <h2 className='mb-4 text-2xl font-medium'>{title}</h2>
+      <p className='mt-0 text-sm leading-6 text-gray-500'>{description}</p>
+    </a>
+  );
+};
