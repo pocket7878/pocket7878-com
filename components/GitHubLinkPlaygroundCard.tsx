@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { LinkCard } from './LinkCard';
 
 type Props = {
@@ -13,9 +13,10 @@ export const GitHubLinkPlaygroundCard = memo(function GitHubLinkPlaygroundCard({
   owner = 'pocket7878',
 }: Props) {
   return (
-    <LinkCard href={`https://github.com/${owner}/${repoName}`}>
-      <h2>{repoName}</h2>
-      <p>{description}</p>
-    </LinkCard>
+    <LinkCard
+      href={`https://github.com/${owner}/${repoName}`}
+      title={repoName}
+      description={description}
+    />
   );
 });

@@ -1,7 +1,5 @@
-import styled from 'styled-components';
+import { PropsWithChildren } from 'react';
 
-export const LinksWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1rem;
-`;
+export const LinksWrapper = ({ children }: PropsWithChildren) => {
+  return <div className='flex flex-row flex-wrap gap-4'>{children}</div>;
+};

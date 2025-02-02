@@ -1,8 +1,10 @@
+'use client';
+
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classnames from 'classnames';
 import Link from 'next/link';
 import { memo, useCallback, useState } from 'react';
-import styled from 'styled-components';
 
 export const Header = memo(function Header() {
   const [menuOpend, setMenuOpened] = useState(false);
@@ -14,94 +16,45 @@ export const Header = memo(function Header() {
     setMenuOpened(false);
   }, []);
 
+  const menuItemClass =
+    'p-0 md:p-4 align-middle h-full text-lg z-997 md:flex md:items-center';
+  const menuLinkClass =
+    'w-full md:w-auto block md:inline md:h-auto py-2 px-4 md:p-0 border-b md:border-0 border-solid border-gray-300';
+
   return (
-    <Wrapper>
-      <Title>
-        <Link href='/'>Pocket7878 Portfolio</Link>
-      </Title>
-      <MenuToggler onClick={handleMenuTogglerClicked}>
+    <header className='fixed top-0 right-0 left-0 z-999 flex h-11 w-full flex-row flex-wrap items-center border-b border-solid border-gray-200 bg-black text-white'>
+      <div className='z-998 ml-4 flex-grow-2 text-sm font-bold'>
+        <Link href='/' className='text-lg font-bold'>
+          Pocket7878 Portfolio
+        </Link>
+      </div>
+      <div
+        className='flex size-10 cursor-pointer items-center md:hidden'
+        onClick={handleMenuTogglerClicked}>
         <FontAwesomeIcon icon={faBars} height={16} />
-      </MenuToggler>
-      <Nav $menuOpened={menuOpend}>
-        <MenuItem onClick={handleMenuLinkClicked}>
-          <Link href='/'>About me</Link>
-        </MenuItem>
-        <MenuItem onClick={handleMenuLinkClicked}>
-          <Link href='/curriculum_vitae'>Curriculum Vitae</Link>
-        </MenuItem>
-        <MenuItem onClick={handleMenuLinkClicked}>
-          <Link href='/playground'>Playground</Link>
-        </MenuItem>
-      </Nav>
-    </Wrapper>
+      </div>
+      <nav
+        className={classnames(
+          'relative w-full flex-col bg-black',
+          menuOpend ? ['flex'] : ['hidden'],
+          'md:static md:flex md:h-full md:w-auto md:flex-row md:justify-end'
+        )}>
+        <div className={menuItemClass} onClick={handleMenuLinkClicked}>
+          <Link href='/' className={menuLinkClass}>
+            About me
+          </Link>
+        </div>
+        <div className={menuItemClass} onClick={handleMenuLinkClicked}>
+          <Link href='/curriculum_vitae' className={menuLinkClass}>
+            Curriculum Vitae
+          </Link>
+        </div>
+        <div className={menuItemClass} onClick={handleMenuLinkClicked}>
+          <Link href='/playground' className={menuLinkClass}>
+            Playground
+          </Link>
+        </div>
+      </nav>
+    </header>
   );
 });
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #eaeaea;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  background: white;
-  height: 48px;
-  z-index: 999;
-`;
-
-const Title = styled.div`
-  flex-grow: 2;
-  padding: 16px;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: bold;
-  z-index: 998;
-`;
-
-const MenuToggler = styled.div`
-  height: 48px;
-  width: 48px;
-  padding: 16px;
-  cursor: pointer;
-
-  @media only screen and (min-width: 768px) {
-    display: none;
-  }
-`;
-
-const Nav = styled.nav<{ $menuOpened: boolean }>`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  background: white;
-  height: 100%;
-
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    height: unset;
-    width: 100%;
-    position: relative;
-    display: ${({ $menuOpened }) => ($menuOpened ? 'flex' : 'none')};
-  }
-`;
-
-const MenuItem = styled.div`
-  height: 100%;
-  vertical-align: middle;
-  padding: 16px;
-  font-size: 16px;
-  line-height: 16px;
-  z-index: 997;
-
-  @media only screen and (max-width: 768px) {
-    padding: 0px;
-    a {
-      width: 100%;
-      display: block;
-      height: 48px;
-      padding: 16px;
-      border-bottom: 1px solid #eaeaea;
-    }
-  }
-`;
