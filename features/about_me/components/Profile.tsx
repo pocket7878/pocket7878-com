@@ -9,7 +9,7 @@ export const Profile = () => {
           src='/prof_img.jpg'
           alt='Profile image'
           width={300}
-          height={245}
+          height={300}
           style={{
             maxWidth: '100%',
             height: 'auto',
