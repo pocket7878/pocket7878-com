@@ -7,7 +7,7 @@ type Props = {
   description?: string;
 };
 
-export const GitHubLinkPlaygroundCard = memo(function GitHubLinkPlaygroundCard({
+export const GitHubProjectCard = memo(function GitHubProjectCard({
   repoName,
   description = '',
   owner = 'pocket7878',

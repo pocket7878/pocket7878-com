@@ -50,8 +50,13 @@ export const Header = memo(function Header() {
           </Link>
         </div>
         <div className={menuItemClass} onClick={handleMenuLinkClicked}>
-          <Link href='/playground' className={menuLinkClass}>
-            Playground
+          <Link href='/projects' className={menuLinkClass}>
+            Projects
+          </Link>
+        </div>
+        <div className={menuItemClass} onClick={handleMenuLinkClicked}>
+          <Link href='/art' className={menuLinkClass}>
+            Art
           </Link>
         </div>
       </nav>
